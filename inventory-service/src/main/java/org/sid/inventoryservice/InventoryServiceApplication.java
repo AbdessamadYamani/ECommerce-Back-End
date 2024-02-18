@@ -27,11 +27,11 @@ public class InventoryServiceApplication {
 	@Bean
 	CommandLineRunner start(CartRepo CR, ProductRepo PR, OrderRepo CO){
 		return args -> {
-			PR.save(new Product(18L,"SSSS","SSS",154,"https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/ap/slave%20photo--2118689825.jpg"));
-			PR.save(new Product(17L,"LLLLL","PPPPPP",189,"https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/ap/slave%20photo--2118689825.jpg"));
-			PR.save(new Product(16L,"AAAAAAA","DDDDD",19,"https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/ap/slave%20photo--2118689825.jpg"));
-			PR.save(new Product(15L,"MMMMM","IIIIIIII",18,"https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/ap/slave%20photo--2118689825.jpg"));
-			PR.save(new Product(14L,"WWWWW","QQQQQQQ",1890,"https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/ap/slave%20photo--2118689825.jpg"));
+			PR.save(new Product(18L,"SSSS","SSS",154,""));
+			PR.save(new Product(17L,"LLLLL","PPPPPP",189,""));
+			PR.save(new Product(16L,"AAAAAAA","DDDDD",19,""));
+			PR.save(new Product(15L,"MMMMM","IIIIIIII",18,""));
+			PR.save(new Product(14L,"WWWWW","QQQQQQQ",1890,""));
 
 
 			List<Product> products1 = PR.findAll().subList(0, 3);
